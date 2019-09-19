@@ -12,19 +12,25 @@
    before and after, leaving you with what was between them. .toUpperCase() makes
    the string, or a single character, uppercased. .toLowerCase() does the same
    thing, but in the reverse order.
- - Bracket notation is what allows you to single out individual characters. By
-   calling the variable that holds a string, and the index of the character you 
-   wand to call in brackets, you can pull a single alphanumeric, or otherwise
-   special character, including spaces.
-    - Example:
+   Examples: */
+   let str = "Playstring";
+   console.log(str.splice(0, 1, "H")); // "Hlaystring"
+   console.log(str.slice(4)); // "string"
+   console.log(str.toUpperCase()); // "PLAYSTRING"
+   str = "PLAYSTRING";
+   console.log(str.toLowerCase()); // "playstring"
+/* - Bracket notation is what allows you to single out individual characters. By
+     calling the variable that holds a string, and the index of the character you 
+     wand to call in brackets, you can pull a single alphanumeric, or otherwise
+     special character, including spaces.
+   - Example: */
         var string = "Hello World!"; // We want to call just the `H`.
         console.log(string[0]); // Will log the 0th character, `H`.
- - You can also concatenate, or push together, several strings, using the
-   addition operator.
-    - Example:
+/*  - You can also concatenate, or push together, several strings, using the
+      addition operator.
+    - Example: */
         function concat(string1, string2) {
             return string1 + string2; // Will concatenate the params.
         }
         var concatResult1 = concat(`Hello `, `World!`);
-        console.log(concatResult1); // Logs which is `Hello World!`
-        */
+        console.log(concatResult1); // Logs `Hello World!`

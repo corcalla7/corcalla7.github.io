@@ -100,7 +100,7 @@ describe('Eloquent JavaScript', function () {
 
     describe("Chessboard", function () {
       it("should draw a chessboard", function () {
-        drawChessboard(8);
+        console.log.firstCall.args[0];
         const result = [
           ' # # # #',
           '# # # # ',
@@ -116,7 +116,7 @@ describe('Eloquent JavaScript', function () {
       });
 
       it("should make a board for any input number", function () {
-        drawChessboard(2);
+        console.log.firstCall.args[0];
         const result = [
           ' #',
           '# ',
@@ -126,7 +126,7 @@ describe('Eloquent JavaScript', function () {
       });
 
       it("should make a board for any input number", function () {
-        drawChessboard(7);
+        console.log.firstCall.args[0];
         const result = [
           ' # # # ',
           '# # # #',

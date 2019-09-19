@@ -133,7 +133,7 @@
       assert.deepEqual(data, {b: "two"});
 
       var data = {a: "one", b: "two", "hokey": false};
-      removeProperties(data, ["b"])
+      removeProperties(data, ["b"]);
       assert.deepEqual(data, {a: "one", "hokey": false});
 
       var data = {a: "one", b: "two", hokey: false};
